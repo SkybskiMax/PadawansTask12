@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace PadawansTask12
 {
@@ -6,7 +8,8 @@ namespace PadawansTask12
     {
         public static bool AllCharactersAreUnique(string source)
         {
-            throw new NotImplementedException();
+            HashSet<char> hashSet = new HashSet<char>(source);
+            return hashSet.Count==source.Length ?  true : false;
         }
     }
 }
